@@ -1,0 +1,394 @@
+/* Palette colori e variabili  */
+:root {
+  --colore-primario: #0f5132;
+  --colore-secondario: #0b7f49;
+  --colore-testo: #1b1b1b;
+  --bordo-sottile: #e5efe8;
+  --ombra: 0 4px 15px rgba(0, 0, 0, 0.06);
+  --larghezza-massima: 1050px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Effetto di scorrimento quando si clicca sui link del menu */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Stile per i testi e i font generali */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--colore-testo);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8faf9;
+  padding-top: 70px;
+}
+
+/* Colore in evidenza per i testi in grassetto di default */
+b {
+  color: var(--colore-primario);
+}
+
+/* Barra di navigazione in alto */
+.barra-navigazione {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: white;
+  box-shadow: var(--ombra);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenitore interno della barra: limita la larghezza  e centra il contenuto */
+.contenitore-navigazione {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Logo azienda nella barra */
+.marchio-navigazione {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  color: var(--colore-primario);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.marchio-navigazione img {
+  height: 35px;
+}
+
+/* Menu di navigazione  */
+.collegamenti-navigazione {
+  flex: 1 1 auto;
+  min-width: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 2px 12px 2px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Impedisce il restringimento delle singole voci del menu */
+.collegamenti-navigazione li {
+  flex: 0 0 auto;
+}
+
+/* Nasconde la barra di scorrimento su schermi piccoli */
+.collegamenti-navigazione::-webkit-scrollbar {
+  display: none;
+}
+
+/* Stile dei link nel menu di navigazione */
+.collegamenti-navigazione a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 20px;
+  transition: 0.2s;
+  font-size: 0.9rem;
+}
+
+/* Effetto hover sui link del menu */
+.collegamenti-navigazione a:hover {
+  background: var(--bordo-sottile);
+  color: var(--colore-primario);
+}
+
+/* Stile per il titolo principale sotto la barra */
+.hero-pagina {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+/* Dimensione e colore del titolo principale */
+.hero-pagina h1 {
+  font-size: 2.2rem;
+  color: var(--colore-primario);
+  margin: 0;
+}
+
+/* Contenitore principale del contenuto: centra il blocco e limita la larghezza massima */
+.contenuto-principale {
+  max-width: var(--larghezza-massima);
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+/* Riquadri che contengono le varie sezioni */
+.sezione-blocco {
+  background: white;
+  border-radius: 12px;
+  padding: 35px;
+  margin-bottom: 30px;
+  box-shadow: var(--ombra);
+  border: 1px solid var(--bordo-sottile);
+  scroll-margin-top: 90px;
+}
+
+/* Stile per i titoli delle sezioni */
+.sezione-blocco h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--bordo-sottile);
+}
+
+/* Testo della sezione introduttiva centrato */
+.testo-centrale {
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Stile del testo descrittivo nelle sezioni tematiche */
+.testo-sezione p {
+  line-height: 1.6;
+  color: #444;
+  font-size: 1.05rem;
+  margin-top: 0;
+}
+
+/* Colori specifici per i titoli e le parole in grassetto in base all'argomento della sezione */
+.colore-eco h2 {
+  color: #e39795;
+  border-color: #e39795;
+}
+
+.colore-eco b {
+  color: #e39795;
+}
+
+.colore-amb h2 {
+  color: #166534;
+  border-color: #166534;
+}
+
+.colore-amb b {
+  color: #166534;
+}
+
+.colore-eti h2 {
+  color: #e4bd5a;
+  border-color: #e4bd5a;
+}
+
+.colore-eti b {
+  color: #e4bd5a;
+}
+
+.colore-fut h2 {
+  color: #a2a2b4;
+  border-color: #a2a2b4;
+}
+
+.colore-fut b {
+  color: #a2a2b4;
+}
+
+/* Griglia a due colonne per affiancare testo e contenuto visivo */
+.griglia-due-colonne {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Stile per le immagini inserite nelle colonne */
+.contenitore-foto {
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--bordo-sottile);
+}
+
+/* aspect-ratio fissa le proporzioni delle immagini */
+.contenitore-foto img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+/* Didascalie delle foto */
+figcaption {
+  text-align: center;
+  padding: 8px;
+  font-size: 0.85rem;
+  color: #666;
+  background: #fdfdfd;
+}
+
+/* Stile generale per le tabelle di dati */
+.contenitore-tabella {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  overflow-x: auto;
+}
+
+/* spazio per le griglie posizionate sotto un testo introduttivo */
+.margine-superiore {
+  margin-top: 20px;
+}
+
+.tabella-dati {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid var(--bordo-sottile);
+}
+
+/* Stile per le celle di intestazione e dati */
+.tabella-dati th,
+.tabella-dati td {
+  padding: 12px 10px;
+  border: 1px solid var(--bordo-sottile);
+  font-size: 0.95rem;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Prima colonna delle tabelle dedicata alle etichette */
+.tabella-dati .colonna-etichetta {
+  text-align: left;
+  background: #fafafa;
+  color: #555;
+  font-weight: 600;
+}
+
+
+.tabella-dati th {
+  background: #f4f9f6;
+  color: var(--colore-primario);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+/* Intestazione della colonna etichetta */
+.tabella-dati th.colonna-etichetta {
+  background: #f4f9f6;
+  color: var(--colore-primario);
+}
+
+/* Celle dati numerici */
+.tabella-dati td:not(.colonna-etichetta) {
+  font-weight: 900;
+  color: #111;
+}
+
+/* Evidenzia la riga del totale nella tabella agriturismo */
+.riga-totale td {
+  background-color: #f0f7f2;
+  font-weight: bold;
+}
+
+/* Icone nella prima colonna delle tabelle vengono affiancate all'etichetta testuale */
+.icona-tabella {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+  object-fit: contain;
+}
+
+/* Riquadro per il report scaricabile a fine pagina */
+.contenitore-report {
+  text-align: center;
+  margin-top: 30px;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  border: 1px dashed #ccc;
+}
+
+.contenitore-report h4 {
+  margin-top: 0;
+  line-height: 1.3;
+}
+
+/* Pulsante per il download del bilancio in PDF */
+.pulsante-scarica {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.25;
+  margin-top: 10px;
+  padding: 10px 24px;
+  background: var(--colore-primario);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.2s;
+}
+
+/* Al passaggio del mouse il pulsante passa alla variabile di colore  */
+.pulsante-scarica:hover {
+  background: var(--colore-secondario);
+}
+
+/* Footer in basso */
+.contenitore-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8faf9;
+  color: #555;
+  font-size: 0.95rem;
+  border-top: 1px solid #e5efe8;
+  margin-top: 40px;
+}
+
+/* Rende il logo compatto su schermi medi */
+@media (max-width: 1220px) {
+  .marchio-navigazione span {
+    display: none;
+  }
+
+  .contenitore-navigazione {
+    gap: 8px;
+  }
+}
+
+/* Responsività per disporre le due colonne in verticale su schermi piccoli */
+@media (max-width: 850px) {
+  .griglia-due-colonne {
+    grid-template-columns: 1fr;
+  }
+
+  .sezione-blocco {
+    padding: 20px;
+  }
+}
+
+/* Riduzione della dimensione del testo sui telefoni */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}

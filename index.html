@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sostenibilità Melinda</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sostenibilità Melinda: focus su Ambiente, Biologico ed Energia sostenibile.">
+  <link rel="icon" type="image/png" href="img/melinda.png"> <!-- Icona della scheda del browser -->
+  <link rel="stylesheet" href="./stile/index.css"> <!-- richiamo della pagina di stile -->
+</head>
+
+<body>
+  <!-- Barra di navigazione fissa: rimane visibile durante lo scorrimento. I collegamenti href="#id" portano direttamente alla sezione. -->
+  <nav class="barra-navigazione">
+    <div class="contenitore-navigazione">
+      <a href="#intro" class="marchio-navigazione">
+        <img src="./img/melinda.png" alt="Melinda">
+        <span>Sostenibilità</span>
+      </a>
+      <ul class="collegamenti-navigazione">
+        <li><a href="#economia-mercato">Economia</a></li>
+        <li><a href="#dalla-terra-al-mercato">Filiera</a></li>
+        <li><a href="#economia-circolare">Economia Circolare</a></li>
+        <li><a href="#ambiente">Ambiente</a></li>
+        <li><a href="#biologico">Biologico</a></li>
+        <li><a href="#energia-sostenibile">Energia</a></li>
+        <li><a href="#etica-societa">Etica</a></li>
+        <li><a href="#formazione-investimento">Formazione</a></li>
+        <li><a href="#agriturismo-melinda">Agriturismo</a></li>
+        <li><a href="#futuro-melinda">Futuro e Report</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <!-- Intestazione principale della pagina con titolo introduttivo -->
+    <header class="hero-pagina">
+      <h1>Un impegno concreto</h1>
+    </header>
+
+    <div class="contenuto-principale">
+      <!-- Sezione introduttiva: presenta il Consorzio e le tre direttrici della sostenibilità -->
+      <section id="intro" class="sezione-blocco">
+        <div class="testo-centrale">
+          <p>
+            Il <b>Consorzio Melinda</b> rappresenta una realtà di riferimento del
+            <b>settore primario</b> italiano, con oltre <b>4.000 famiglie</b> di frutticoltori
+            attive nelle <b>Valli del Noce</b>, in Trentino. In agricoltura, la qualità del suolo,
+            la disponibilità d'acqua, la biodiversità e la stabilità climatica incidono direttamente
+            sui risultati produttivi: per questo la <b>sostenibilità</b> è al centro delle scelte del Consorzio, sia per
+            garantire risultati ai soci sia per preservare il territorio in cui operano.
+            L'impegno si sviluppa su tre direzioni: <b>economica</b>, per assicurare
+            redditività ai soci e valore per la filiera; <b>ambientale</b>, tramite energie rinnovabili,
+            celle ipogee e agricoltura biologica; <b>sociale</b>, con attenzione alle persone,
+            alla formazione e al rapporto con la comunità.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sezione Economia colore-eco applica il colore tematico ai titoli e ai grassetti. -->
+      <section id="economia-mercato" class="sezione-blocco colore-eco">
+        <h2>Economia e mercato</h2>
+        <!-- Sistema di griglie che si ripete piu volte nella pagina: testo descrittivo a sinistra tabella/immagine a destra  -->
+        <div class="griglia-due-colonne">
+          <div class="testo-sezione">
+            <p>
+              Le performance commerciali delle mele Melinda e dei prodotti trasformati confermano
+              la solidità del modello cooperativo: <b>1.438 dipendenti</b>, ricavi per
+              <b>276 milioni di euro</b> e oltre <b>152 milioni</b> liquidati direttamente ai soci
+              frutticoltori nell'esercizio 2021-2022. Il valore liquidato rappresenta il compenso
+              proporzionale ai chilogrammi conferiti e alla qualità del prodotto, secondo criteri
+              condivisi e verificabili dall'intera base sociale. Accanto alle varietà storiche
+              <b>Golden</b>, <b>Renetta</b> e <b>Gala</b>, il Consorzio investe in colture ad alto
+              potenziale commerciale: la crescita di <b>Evelina</b> e l'introduzione di nuove linee
+              come <b>Enjoy</b>, <b>Morgana</b> e <b>SweeTango</b> rafforzano il percorso di
+              <b>innovazione</b> e <b>diversificazione</b> dell'offerta.
+            </p>
+          </div>
+          <div class="contenitore-tabella">
+            <table class="tabella-dati"> <!-- Tabella dei kg di mele vendute nei vari anni -->
+              <thead>
+                <tr>
+                  <th class="colonna-etichetta">Mele Vendute</th>
+                  <th>2018-2019</th>
+                  <th>2019-2020</th>
+                  <th>2020-2021</th>
+                  <th>2021-2022</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/melaverde.jpg" class="icona-tabella" alt="">
+                    Chilogrammi
+                  </td>
+                  <td>419.503.623</td>
+                  <td>339.050.861</td>
+                  <td>421.782.974</td>
+                  <td>416.130.801</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sezione Dalla Terra al Mercato -->
+      <section id="dalla-terra-al-mercato" class="sezione-blocco colore-eco">
+        <h2>Dalla Terra al Mercato</h2>
+        <div class="griglia-due-colonne">
+          <div class="testo-sezione">
+            <p>
+              Nato nel <b>1989</b> dall'unione di <b>16 cooperative</b> e oltre
+              <b>4.000 famiglie</b> di frutticoltori, il Consorzio gestisce circa
+              <b>400.000 tonnellate</b> di mele all'anno secondo un modello di
+              <b>economia circolare</b>: il prodotto non idoneo al mercato fresco viene
+              valorizzato in <b>succhi</b>, <b>mousse</b> e <b>snack</b>, riducendo gli scarti
+              e generando valore lungo la filiera. La collaborazione con <b>APOT</b> ha contribuito
+              a ottimizzare i processi e migliorare le performance ambientali dell'intera catena produttiva.
+              L'investimento in <b>varietà resistenti</b> alle malattie ha portato la superficie
+              coltivata da <b>11</b> a <b>99 ettari</b> tra il 2016 e il 2021, riducendo sensibilmente i
+              <b>trattamenti fitosanitari</b>. Le vendite superano i <b>300 milioni di euro</b>,
+              con il <b>24%</b> esportato in <b>oltre 60 Paesi</b>.
+            </p>
+          </div>
+          <figure class="contenitore-foto">
+            <img src="./img/sost-ec-primafoto.jpg" alt="Filiera Melinda">
+            <figcaption>Foto storica dei primi soci Melinda.</figcaption> <!-- didascalia della foto -->
+          </figure>
+        </div>
+      </section>
+
+      <!-- Sezione Economia Circolare -->
+      <section id="economia-circolare" class="sezione-blocco colore-eco">
+        <h2>Economia circolare e Indotto</h2>
+        <div class="testo-sezione">
+          <p>
+            Melinda adotta un modello economico orientato alla sostenibilità perché
+            <b>ridistribuisce una quota rilevante del valore generato</b>. La ricchezza derivante
+            dalla commercializzazione delle mele viene reinvestita sul territorio:
+            <b>oltre l'80%</b> del valore complessivo ritorna alle <b>Valli del Noce</b>,
+            attraverso pagamenti ai soci, acquisti da fornitori locali e salari.
+            Il sistema economico della mela coinvolge il <b>26%</b> della popolazione residente,
+            con <b>4.179 aziende</b> e oltre <b>14.000 addetti</b> nell'indotto diretto e indiretto,
+            con una concentrazione di imprese e servizi <b>circa tripla</b> rispetto alla media nazionale.
+          </p>
+        </div>
+        <div class="griglia-due-colonne margine-superiore">
+          <div class="contenitore-tabella">
+            <table class="tabella-dati">
+              <thead>
+                <tr>
+                  <th class="colonna-etichetta">Valore in Euro</th>
+                  <!-- tabella dati del valore generato,distribuito e trattenuto -->
+                  <th>2019-2020</th>
+                  <th>2020-2021</th>
+                  <th>2021-2022</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/economia-circolare2.png" class="icona-tabella" alt="">
+                    Generato
+                  </td>
+                  <td>302.212.976</td>
+                  <td>337.421.603</td>
+                  <td>278.392.387</td>
+                </tr>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/economia-circolare2.png" class="icona-tabella" alt="">
+                    Distribuito
+                  </td>
+                  <td>300.802.642</td>
+                  <td>335.969.372</td>
+                  <td>277.352.239</td>
+                </tr>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/economia-circolare2.png" class="icona-tabella" alt="">
+                    Trattenuto
+                  </td>
+                  <td>1.410.334</td>
+                  <td>1.452.231</td>
+                  <td>1.070.148</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="contenitore-tabella">
+            <table class="tabella-dati"> <!-- Persone coinvolte con il Consorzio Melinda -->
+              <thead>
+                <tr>
+                  <th class="colonna-etichetta" colspan="2">Impatto sul Territorio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/icona1.png" class="icona-tabella" alt="">
+                    Abitanti Valli Noce
+                  </td>
+                  <td>58.015</td>
+                </tr>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/icona2.png" class="icona-tabella" alt="">
+                    Soci Melinda
+                  </td>
+                  <td>4.000</td>
+                </tr>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/icona3.png" class="icona-tabella" alt="">
+                    Dipendenti diretti
+                  </td>
+                  <td>1.500</td>
+                </tr>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/icona4.png" class="icona-tabella" alt="">
+                    Persone indotto
+                  </td>
+                  <td>14.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sezione Ambiente colore-amb applica il colore tematico verde scuro. -->
+      <section id="ambiente" class="sezione-blocco colore-amb">
+        <h2>Ambiente e Apicoltura</h2>
+        <div class="griglia-due-colonne">
+          <div class="testo-sezione">
+            <p>
+              Nelle <b>Valli del Noce</b> i meleti occupano solo l'<b>8,2%</b> della superficie,
+              mentre l'<b>87,7%</b> è coperto da boschi e pascoli che preservano la biodiversità
+              del territorio. Questo equilibrio è monitorato attraverso l'indice <b>QBS-ar</b>,
+              che analizza i microartropodi nei primi centimetri del suolo: nei <b>52 rilievi</b>
+              eseguiti nel <b>2020</b> è stato registrato un valore medio di <b>140 su 160</b>,
+              nella fascia di qualità biologica più alta, base per la certificazione
+              <b>Biodiversity Alliance</b>. La cura costante dei terreni da parte dei frutticoltori
+              stabilizza i pendii: dal 2001 al 2018 le zone colpite da frane sono cresciute
+              solo dello <b>0,6%</b>, con un risparmio stimato in
+              <b>oltre un milione di euro annui</b> in costi di prevenzione.
+              Le <b>api</b> sono un indicatore diretto di questo equilibrio: il Consorzio
+              posiziona 1-2 arnie per ettaro di frutteto, in un rapporto di mutuo beneficio
+              tra impollinazione e produzione.
+            </p>
+          </div>
+          <div class="contenitore-tabella">
+            <table class="tabella-dati">
+              <thead>
+                <tr>
+                  <th class="colonna-etichetta">Apicoltura</th>
+                  <th>2019</th>
+                  <th>2020</th>
+                  <th>2021</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/apicoltore.png" class="icona-tabella" alt="">
+                    Apicoltori
+                  </td>
+                  <td>260</td>
+                  <td>285</td>
+                  <td>315</td>
+                </tr>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/arnia.png" class="icona-tabella" alt="">
+                    Arnie
+                  </td>
+                  <td>3.937</td>
+                  <td>4.179</td>
+                  <td>4.531</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- Sezione Piano Biologico-->
+      <section id="biologico" class="sezione-blocco colore-amb">
+        <h2>Piano Biologico</h2>
+        <!-- Griglia a due colonne: qui ho voluto differenziare per non avere monotonia visiva, mettendo l'immagine a sinistra e il testo a destra  e sotto al testo la tabella -->
+        <div class="griglia-due-colonne">
+          <figure class="contenitore-foto">
+            <img src="./img/sost-terzafoto.jpg" alt="Coltivazione Bio">
+            <figcaption>Le Oasi Biologiche nella Val di Non.</figcaption>
+          </figure>
+          <div class="testo-sezione">
+            <p>
+              Con il <b>Piano Bio</b>, avviato nel 2008, e le <b>Oasi Biologiche</b> della Val di Non,
+              Melinda è diventata la <b>principale realtà biologica del Trentino</b>: dagli appena
+              <b>70 ettari</b> certificati nel 2018 si è arrivati a <b>301 ettari</b> nel 2021,
+              con altri 70 in fase di conversione. Il Piano supporta i soci con finanziamenti dedicati
+              e formazione specializzata. Parallelamente, sono state introdotte nuove varietà resistenti
+              alla <b>ticchiolatura</b> come <b>Morgana</b>, <b>Gradisca</b>, <b>SweeTango</b>,
+              <b>Galant</b> e <b>Isaaq</b>: la resistenza naturale a questa patologia riduce i
+              <b>trattamenti fitosanitari</b> e abbassa i costi di produzione, rendendo
+              il modello biologico più accessibile.
+            </p>
+            <div class="contenitore-tabella margine-superiore">
+              <table class="tabella-dati">
+                <thead>
+                  <tr>
+                    <th class="colonna-etichetta">Certificazione</th>
+                    <th>2018</th>
+                    <th>2020</th>
+                    <th>2021</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="colonna-etichetta">
+                      <img src="./img/biologico.png" class="icona-tabella" alt="">
+                      Ettari Bio
+                    </td>
+                    <td>70</td>
+                    <td>240</td>
+                    <td>301</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sezione Energia Sostenibile-->
+      <section id="energia-sostenibile" class="sezione-blocco colore-amb">
+        <h2>Energia Sostenibile e Celle Ipogee</h2>
+        <div class="griglia-due-colonne">
+          <div class="testo-sezione">
+            <p>
+              Il Consorzio copre il <b>100% del fabbisogno energetico</b> da fonti rinnovabili:
+              il <b>90,29%</b> da energia idroelettrica e il <b>9,71%</b> da pannelli fotovoltaici
+              installati sui tetti degli impianti. Nel 2021-2022 la produzione fotovoltaica ha
+              raggiunto <b>5.542.734 kWh</b>, di cui <b>4.348.965 kWh</b> autoconsumati e
+              <b>1.193.769 kWh</b> ceduti al Gestore Servizi Energetici.
+              Le <b>celle ipogee</b> di Rio Maggiore, cavità scavate a <b>300 metri di profondità</b>
+              nella montagna, sfruttano le proprietà isolanti naturali della roccia per la conservazione
+              delle mele, riducendo il consumo energetico del <b>30%</b> rispetto alle celle tradizionali,
+              con un risparmio stimato di <b>12 GWh annui</b>. Sul fronte idrico, i sistemi di
+              <b>irrigazione a goccia</b> abbattono i consumi del 30% rispetto ai sistemi sovrachioma,
+              mentre il sistema <b>ECORECYCLING</b> a circuiti chiusi ricicla tra
+              <b>100 e 200 m³</b> d'acqua al giorno durante la lavorazione.
+            </p>
+          </div>
+          <div class="contenitore-tabella">
+            <table class="tabella-dati">
+              <thead>
+                <tr>
+                  <th class="colonna-etichetta" colspan="2">Consumo Fonti Energetiche</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/idroelettrico.png" class="icona-tabella" alt="">
+                    Energia Idroelettrica
+                  </td>
+                  <td>90,29 %</td>
+                </tr>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/pannello.jpg" class="icona-tabella" alt="">
+                    Autoproduzione Fotovoltaica
+                  </td>
+                  <td>9,71 %</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- Sezione Etica e società colore-eti applica il colore tematico. -->
+      <section id="etica-societa" class="sezione-blocco colore-eti">
+        <h2>Etica e Società</h2>
+        <div class="griglia-due-colonne">
+          <figure class="contenitore-foto">
+            <img src="./img/sost-et-primafoto.jpg" alt="Le donne in Melinda">
+            <figcaption>Le donne in Melinda</figcaption>
+          </figure>
+          <div class="testo-sezione">
+            <p>
+              <b>Il contributo femminile è centrale nell'organizzazione aziendale.</b>
+              Le donne rappresentano i <b>due terzi del personale</b> e sono il cardine
+              del sistema di lavorazione e confezionamento. Il Consorzio garantisce la
+              <b>parità retributiva</b> a parità di ruolo e adotta strumenti concreti di
+              conciliazione vita-lavoro, tra cui il <b>part-time</b> per le lavoratrici madri.
+              Ogni anno si attivano circa <b>10.000 contratti stagionali</b>, il 75% dei quali
+              provenienti dall'estero, prevalentemente dall'Europa orientale, nelle fasi di
+              diradamento e raccolta tra <b>giugno e ottobre</b>. In molti casi le stesse persone
+              tornano ogni anno, consolidando legami stabili con le famiglie ospitanti e
+              contribuendo all'<b>integrazione</b> nel territorio trentino.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Sezione sulla formazione -->
+      <section id="formazione-investimento" class="sezione-blocco colore-eti">
+        <h2>La Formazione: un investimento per il futuro</h2>
+        <div class="griglia-due-colonne">
+          <div class="testo-sezione">
+            <p>
+              La <b>formazione</b> è considerata un investimento strategico. Il <b>100% dei dipendenti</b>
+              riceve formazione annuale, di cui il <b>98%</b> su temi di sicurezza, coordinata con
+              l'<b>ASL di Trento</b> e i medici competenti. Nel 2021-2022 sono state erogate
+              <b>198 ore</b> su frigoconservazione e <b>266 ore</b> su macchinari.
+              Parallelamente, <b>APOT</b> ha formato <b>5.386 addetti e soci frutticoltori</b>
+              attraverso 7 corsi tecnici nel 2022, direttamente sul campo. Il modello retributivo
+              adottato prevede una componente fissa e una variabile collegata al raggiungimento
+              di obiettivi concordati annualmente.
+            </p>
+          </div>
+          <div class="contenitore-tabella">
+            <table class="tabella-dati">
+              <thead>
+                <tr>
+                  <th class="colonna-etichetta" colspan="2">Dati Formazione 2021-2022</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/formazioneside.png" class="icona-tabella" alt="">
+                    Addetti formati da APOT
+                  </td>
+                  <td>5.386</td>
+                </tr>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/formazioneside.png" class="icona-tabella" alt="">
+                    Ore su Frigoconservazione
+                  </td>
+                  <td>198 h</td>
+                </tr>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/formazioneside.png" class="icona-tabella" alt="">
+                    Ore su Macchinari
+                  </td>
+                  <td>266 h</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sezione agriturismo -->
+      <section id="agriturismo-melinda" class="sezione-blocco colore-eti">
+        <h2>Agriturismo Melinda</h2>
+        <div class="griglia-due-colonne">
+          <div class="testo-sezione">
+            <p>
+              La <b>Val di Non</b>, oltre a essere la culla delle mele Melinda, è un contesto
+              paesaggistico di grande valore con <b>altopiani coltivati</b>, <b>canyon</b>,
+              <b>castelli</b> e <b>borghi storici</b>. Attraverso il progetto
+              <b>Agritur Ambasciatori di Melinda</b>, <b>20 strutture agrituristiche</b> gestite
+              dalle famiglie dei soci offrono ai visitatori un'esperienza diretta nel territorio.
+              Iniziative come la festa <b>Pomaria</b> e il <b>Golden Theatre</b> si affiancano
+              a un modello di <b>ospitalità a basso impatto</b>. I dati mostrano una crescita
+              costante: dopo la flessione del 2020 dovuta alla pandemia, il 2022 ha registrato
+              il <b>record storico</b> con oltre <b>62.000 presenze</b>.
+            </p>
+          </div>
+          <div class="contenitore-tabella">
+            <table class="tabella-dati"> <!-- Tabella dei visitatori nei vari anni -->
+              <thead>
+                <tr>
+                  <th class="colonna-etichetta">Visitatori</th>
+                  <th>2020</th>
+                  <th>2021</th>
+                  <th>2022</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/italiani.png" class="icona-tabella" alt="">
+                    Italiani
+                  </td>
+                  <td>32.878</td>
+                  <td>40.293</td>
+                  <td>48.647</td>
+                </tr>
+                <tr>
+                  <td class="colonna-etichetta">
+                    <img src="./img/mondo.png" class="icona-tabella" alt="">
+                    Stranieri
+                  </td>
+                  <td>3.733</td>
+                  <td>7.286</td>
+                  <td>13.882</td>
+                </tr>
+                <tr class="riga-totale">
+                  <td class="colonna-etichetta">
+                    <img src="./img/totale.png" class="icona-tabella" alt="">
+                    Totale
+                  </td>
+                  <td>36.611</td>
+                  <td>47.579</td>
+                  <td>62.529</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sezione innovazioni di Melinda colore-fut applica il colore tematico. -->
+      <section id="futuro-melinda" class="sezione-blocco colore-fut">
+        <h2>Il futuro nei meleti</h2>
+        <div class="testo-sezione">
+          <p>
+            Il Consorzio guarda al futuro su basi già consolidate: dal <b>1996</b> i soci hanno
+            progressivamente adottato una <b>frutticoltura integrata e sostenibile</b> sottoposta
+            a controlli scientifici. In collaborazione con l'<b>Università di Trento</b> e la
+            <b>Fondazione Edmund Mach</b>, vengono impiegati <b>droni eye scab</b> per individuare
+            precocemente la ticchiolatura e intervenire solo sulle piante a rischio. Il sistema
+            <b>S.O.PH.I.A.</b> estende questo approccio all'intera gestione fitosanitaria,
+            con l'obiettivo di coprire <b>300 ettari</b> entro il <b>2026</b>. La
+            <b>funivia delle mele</b>, inaugurata nel 2025, è un impianto di 1.340 metri
+            che collega la sala di lavorazione alle celle ipogee evitando circa
+            <b>5.000 camion annui</b> nella valle, alimentata interamente da fonti rinnovabili.
+            Entro il 2026 è prevista anche la costruzione di <b>LCA specifiche</b> per misurare
+            l'impatto ambientale di ogni formato di imballaggio lungo l'intera catena del valore.
+          </p>
+        </div>
+        <div class="contenitore-report">
+          <h4>Bilancio di Sostenibilità 2023</h4>
+          <p>
+            Tutti gli indicatori e gli obiettivi descritti in questa pagina
+            sono tratti dal Bilancio di Sostenibilità 2023 del Consorzio Melinda,
+            redatto secondo i GRI Standard 2021 e disponibile in formato PDF.
+          </p>
+          <!-- Pulsante per il download del bilancio in PDF -->
+          <a class="pulsante-scarica" href="./report/Bilancio-Melinda2023.pdf" download target="_blank">
+            Scarica il Report in PDF
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer  -->
+  <footer>
+    <div class="contenitore-footer">
+      <p>&copy; 2026 Consorzio Melinda - Project Work a cura di Angelo Campo. Tutti i diritti riservati al Consorzio
+        Melinda.</p>
+    </div>
+  </footer>
+</body>
+</html>
